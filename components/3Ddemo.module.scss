@@ -1,0 +1,117 @@
+.container {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin-left: 80px;
+    border: 1px solid red;
+    transform-style: preserve-3d;
+    transform-origin: 50% 200px;
+    perspective: 500px;
+    perspective-origin: 300px 300px;
+    transform: rotateX(0deg) rotateY(0deg);
+
+    .container2 {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        transform-style: preserve-3d;
+        &::after,
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            display: block;
+        }
+        &::after {
+            transform: translateZ(10px);
+        }
+        &::before {
+            transform: translateZ(-10px);
+        }
+
+        &,
+        &::after,
+        &::before {
+            width: 100px;
+            height: 100px;
+            background: #3a58;
+        }
+    }
+
+    .origin {
+        width: 1px;
+        height: 1px;
+        background: red;
+        border: 1px solid red;
+        transform: translateX(50px) translateY(50px);
+    }
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: rgba(141, 214, 249, 0.5);
+        border: 1px solid #fff;
+    }
+    .item1 {
+        transform: rotateX(90deg) translateZ(50px);
+    }
+
+    .item2 {
+        transform: rotateX(-90deg) translateZ(50px);
+    }
+    .item3 {
+        transform: translateZ(50px);
+    }
+    .item4 {
+        transform: rotateX(-180deg) translateZ(50px);
+    }
+    .item5 {
+        transform: rotateY(-90deg) translateZ(50px);
+    }
+    .item6 {
+        transform: rotateY(90deg) translateZ(50px);
+    }
+
+    .item10,
+    .item20,
+    .item30,
+    .item40,
+    .item50,
+    .item60 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        background: rgba(141, 214, 249, .5);
+        border: 1px solid #fff;
+    }
+    .item10 {
+        transform: rotateX(90deg) translateX(-50px) translateZ(-50px);
+    }
+    .item20 {
+        transform: translateX(-50px) translateY(-50px) translateZ(-100px);
+    }
+    .item30 {
+        transform: translateX(-50px) translateY(-50px) translateZ(100px);
+    }
+    .item40 {
+        transform: rotateX(90deg) translateX(-50px) translateZ(150px);
+    }
+    .item50 {
+        transform: rotateY(90deg) translateY(-50px) translateZ(50px);
+    }
+    .item60 {
+        transform: rotateY(90deg) translateY(-50px) translateZ(-150px);
+    }
+
+    
+}

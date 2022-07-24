@@ -1,0 +1,26 @@
+.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25vw;
+    margin-top: -25vh;
+}
+
+.banner {
+    // position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.intro {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    // border: 1px solid white;
+    font-size: 2vw;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 4px;
+}

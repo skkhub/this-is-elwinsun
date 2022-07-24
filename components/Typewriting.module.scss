@@ -1,0 +1,25 @@
+.typewriting {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .1em solid;
+    animation:
+     typing 6s steps(6),
+      caret 1s steps(1) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.content {
+    border-right: .1em solid;
+    animation: caret 1s steps(1) infinite;
+}
