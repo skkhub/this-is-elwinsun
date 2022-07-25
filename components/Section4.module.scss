@@ -19,33 +19,34 @@
         // background-color: #fff;
         width: 4em;
         margin: 0 auto;
-        margin-bottom: 2em;
+        margin-bottom: 4em;
         text-shadow: -1px 1px 0px #fff, -3px 3px 0px #333;
     }
 
     ul {
         position: relative;
-        width: 80%;
+        width: 60%;
         // height: 500px;
         margin: 0 auto;
         padding-top: 2vh;
-        border-bottom: 4px solid #000;
-        border-left: 4px solid #000;
+        border-bottom: 1vmin solid #000;
+        border-left: 1vmin solid #000;
         &::before {
-            content: '> skills';
+            content: 'skills';
             position: absolute;
-            top: -74px;
-            left: -70px;
-            transform: rotate(-90deg);
-            font-size: 40px;
+            top: -1.5em;
+            left: -1.5em;
+            // transform: rotate(-90deg);
+            font-size: 4vmin;
+            font-weight: 700;
         }
         &::after {
-            content: '> proficiency';
+            content: 'proficiency';
             position: absolute;
-            bottom: -26px;
-            right: -220px;
-            // transform: rotate(-90deg);
-            font-size: 40px;
+            bottom: -1.5em;
+            right: -2em;
+            font-size: 4vmin;
+            font-weight: 700;
         }
         li {
             // border: 1px solid blue;
