@@ -18,7 +18,7 @@ export default props => {
                 {skills.map(skill =>
                     <li key={skill.name}
                         style={{
-                            backgroundImage: `linear-gradient(to right, #f00 ${skill.progress}%, #ff0 ${skill.progress + 15}%, transparent ${skill.progress + 30}%)`
+                            backgroundImage: `linear-gradient(to right, #0a0 ${skill.progress}%, #3a0 ${skill.progress + 15}%, transparent ${skill.progress + 30}%)`
                         }}>{skill.name}</li>
                 )}
             </ul>

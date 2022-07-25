@@ -7,6 +7,7 @@ import Window from '../components/Window';
 import Typewriting from '../components/Typewriting';
 import Section3 from '../components/Section3';
 import Section4 from '../components/Section4';
+import Section5 from '../components/Section5';
 
 export default function Index() {
     const banner = useRef();
@@ -26,6 +27,7 @@ export default function Index() {
             </Section2>
             <Section3></Section3>
             <Section4></Section4>
+            <Section5></Section5>
             <Layout>
                 <article>Hello~<br/>
                 My name is Elwin Sun. This is my home page.

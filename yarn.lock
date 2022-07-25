@@ -215,6 +215,11 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
+pic-editor@^1.0.8:
+  version "1.0.8"
+  resolved "http://43.132.115.37:4873/pic-editor/-/pic-editor-1.0.8.tgz#341324309407377c70fdc5d0c54232dfeb6888e0"
+  integrity sha512-EZ7VTubMomgjLZMxBe42471c0BaF1uTGKnenrAZF4ljEBvaTLw0xsNvqJIiW61chF68Zrw9IjetRli1wnJgiXw==
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"

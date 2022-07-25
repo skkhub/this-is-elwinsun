@@ -6,8 +6,8 @@
     background-image:
         linear-gradient(45deg, #eee 25%, transparent 0),
         linear-gradient(45deg, transparent 75%, #eee 0),
-        linear-gradient(45deg, #ddd 25%, transparent 0),
-        linear-gradient(45deg, transparent 75%, #ddd 0);
+        linear-gradient(45deg, #eee 25%, transparent 0),
+        linear-gradient(45deg, transparent 75%, #eee 0);
     background-size: 60px 60px;
     background-position: 0px 0px, -30px 30px, 30px -30px, 0px 0px;
     background-attachment: fixed;
@@ -24,11 +24,29 @@
     }
 
     ul {
+        position: relative;
         width: 80%;
         // height: 500px;
         margin: 0 auto;
-        // border: 1px solid red;
-
+        padding-top: 2vh;
+        border-bottom: 4px solid #000;
+        border-left: 4px solid #000;
+        &::before {
+            content: '> skills';
+            position: absolute;
+            top: -74px;
+            left: -70px;
+            transform: rotate(-90deg);
+            font-size: 40px;
+        }
+        &::after {
+            content: '> proficiency';
+            position: absolute;
+            bottom: -26px;
+            right: -220px;
+            // transform: rotate(-90deg);
+            font-size: 40px;
+        }
         li {
             // border: 1px solid blue;
             // width: 500px;
