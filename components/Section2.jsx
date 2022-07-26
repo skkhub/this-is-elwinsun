@@ -1,5 +1,4 @@
 import style from './Section2.module.scss';
-import {useState, useEffect} from 'react';
 
 export default props => {
     

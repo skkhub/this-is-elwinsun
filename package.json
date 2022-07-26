@@ -15,6 +15,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "download": "^8.0.0",
     "sass": "^1.53.0"
   }
 }

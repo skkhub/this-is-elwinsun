@@ -6,6 +6,9 @@ let Banner = (props, ref) => {
     const [anima, setAnima] = useState(null);
     let running = false;
     useEffect(() => {
+        setAnima({
+            position: 'fixed',
+        });
         document.addEventListener('keydown', (e) => {
             if (e.keyCode === 40 || e.which === 40) {
                 hide();

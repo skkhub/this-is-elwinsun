@@ -1,0 +1,37 @@
+.container {
+    // border: 1px solid red;
+
+}
+.config-container {
+    // border: 1px solid red;
+    padding: 20px;
+    overflow: hidden;
+    .config {
+        width: 50%;
+        height: 200px;
+        border-radius: 4px;
+        border: 1px solid #666;
+        float: left;
+    }
+    .upload {
+        float: left;
+        width: calc(50% - 30px);
+        margin-left: 20px;
+        margin-bottom: 100px;
+        margin-top: 40px;
+        // border: 1px solid red;
+    }
+    .inst {
+        float: left;
+        margin-left: 20px;
+    }
+}
+
+.editor {
+    border: 1px solid #ccc;
+    width: 900px;
+    height: 600px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+}

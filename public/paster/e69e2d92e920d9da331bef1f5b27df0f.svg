@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="233px" height="233px" viewBox="0 0 233 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3备份 3</title>
+    <defs>
+        <path d="M187.031963,0 C83.7370623,0 0,83.7370623 0,187.031963 L187.031963,187.031963 L187.031963,0 Z" id="path-1"></path>
+        <filter x="-17.1%" y="-17.1%" width="134.1%" height="134.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-20" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.490196078   0 0 0 0 0.898039216   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M187.031963,62.3439878 C118.168696,62.3439878 62.3439878,118.168696 62.3439878,187.031963 L187.031963,187.031963 L187.031963,62.3439878 Z" id="path-3"></path>
+        <filter x="-12.4%" y="-12.4%" width="124.8%" height="124.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-20" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.968627451   0 0 0 0 0.725490196   0 0 0 0 0.937254902  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M187.031963,124.687976 C152.60033,124.687976 124.687976,152.60033 124.687976,187.031963 L187.031963,187.031963 L187.031963,124.687976 Z" id="path-5"></path>
+        <filter x="-24.8%" y="-24.8%" width="149.7%" height="149.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="-20" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="贴纸" transform="translate(-188.000000, -821.000000)">
+            <g id="编组-3备份-3" transform="translate(210.958904, 843.835616)">
+                <g id="编组-7" transform="translate(0.182648, 0.182648)">
+                    <g id="路径备份-3">
+                        <use fill="#9C9EFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <path stroke="#FFFFFF" stroke-width="21.9178082" d="M47.0312784,47.0312784 C85.2400612,8.82249561 138.99303,-13.8421011 197.990868,-10.6631944 L197.990868,-10.6631944 L197.990868,197.990868 L-10.6631944,197.990868 C-13.8421011,138.99303 8.82249561,85.2400612 47.0312784,47.0312784 Z"></path>
+                        <path stroke="#363636" stroke-width="5.47945205" d="M52.843115,52.843115 C87.7825362,17.9036937 136.282802,-3.47488331 189.771689,-2.72039363 L189.771689,-2.72039363 L189.771689,189.771689 L-2.72039363,189.771689 C-3.47488331,136.282802 17.9036937,87.7825362 52.843115,52.843115 Z"></path>
+                    </g>
+                    <g id="路径备份">
+                        <use fill="#FF7C7C" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <path stroke="#363636" stroke-width="5.47945205" d="M96.9269715,96.9269715 C120.583882,73.2700608 153.499257,58.8716143 189.771689,59.6330386 L189.771689,59.6330386 L189.771689,189.771689 L59.6330386,189.771689 C58.8716143,153.499257 73.2700608,120.583882 96.9269715,96.9269715 Z"></path>
+                    </g>
+                    <g id="路径备份-2">
+                        <use fill="#FFB05F" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <path stroke="#363636" stroke-width="5.47945205" d="M141.010828,141.010828 C153.384365,128.637291 170.716994,121.222846 189.771689,122.004517 L189.771689,122.004517 L189.771689,189.771689 L122.004517,189.771689 C121.222846,170.716994 128.637291,153.384365 141.010828,141.010828 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

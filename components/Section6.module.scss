@@ -1,0 +1,93 @@
+.section6 {
+  position: relative;
+  // height: 100vh;
+  width: 100%;
+  padding: 10vh;
+  color: #ccc;
+
+  background-color: silver;
+  background-image:
+      linear-gradient(26deg, #e5672373 23px, transparent 1px),
+      linear-gradient(206deg, #e5672355 23px, transparent 1px),
+      linear-gradient(26deg, #e5672373 23px, transparent 1px),
+      linear-gradient(206deg, #e5672355 23px, transparent 1px);
+  background-size: 58px 58px;
+  background-position: 28px 28px, 23px 3px, -1px -1px, -6px 32px, 0px 0px;
+  background-attachment: fixed;
+
+  .email {
+    text-align: center;
+    color: #000;
+    line-height: 2;
+    margin-bottom: 2em;
+  }
+  .textarea {
+    // border: 1px solid red;
+    position: relative;
+    height: 24vh;
+    width: 50%;
+    margin: 0 auto 10vh;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 2px #666, 0px 0px 0px 4px #333,;
+    textarea {
+      position: relative;
+      border: none;
+      resize: none;
+      border-radius: 2px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      display: block;
+      padding: 0.5em 1em;
+      line-height: 1.4;
+      // background: hsla(0, 0%, 100%, .3);
+      color: #ccc;
+      background: transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      // z-index: 1;
+      background-color: rgb(38, 60, 56);
+      // background-image:
+      //   linear-gradient(26deg, #e5672373 23px, transparent 1px),
+      //   linear-gradient(206deg, #e5672355 23px, transparent 1px),
+      //   linear-gradient(26deg, #e5672373 23px, transparent 1px),
+      //   linear-gradient(206deg, #e5672355 23px, transparent 1px);
+      // background-size: 58px 58px;
+      // background-position: 28px 28px, 23px 3px, -1px -1px, -6px 32px, 0px 0px;
+      // background-attachment: fixed;
+      // filter: blur(40px);
+      // margin: -40px;
+    }
+    button {
+      display: block;
+      margin: 1em auto;
+      border: none;
+      background: #598;
+      color: #fff;
+      padding: 0.5em 1em;
+      border-radius: 2px;
+    }
+  }
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    padding: 6px;
+    // border: 1px solid red;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
