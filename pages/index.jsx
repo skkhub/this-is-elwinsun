@@ -1,6 +1,6 @@
 import {useRef} from 'react';
 import Nav from '../components/Nav';
-import Wall from '../components/Wall';
+// import Wall from '../components/Wall';
 import Banner from '../components/Banner';
 import Section2 from '../components/Section2';
 import Window from '../components/Window';
