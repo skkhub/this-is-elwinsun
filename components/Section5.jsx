@@ -1,7 +1,7 @@
 import style from './Section5.module.scss';
 import Career from './Career';
 
-export default props => {
+const Section = props => {
     const careers = [
       {
         company: 'Tencnet',
@@ -50,4 +50,6 @@ export default props => {
           )}
         </div>
     </>
-}
+};
+
+export default Section;

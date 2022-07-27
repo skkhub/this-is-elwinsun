@@ -1,6 +1,6 @@
 import style from './Window.module.scss';
 
-export default props => <>
+const Window = props => <>
     <div className={style["window"] + ' ' + props.className}>
         <div className={style['inner']}
             style={{backgroundImage: `url(${props.img})`}}
@@ -10,3 +10,5 @@ export default props => <>
         </div>
     </div>
 </>
+
+export default Window;

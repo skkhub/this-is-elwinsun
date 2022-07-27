@@ -20,7 +20,7 @@ let Banner = (props, ref) => {
                 hide();
             }
         });
-    }, []);
+    }, [hide]);
 
     useImperativeHandle(ref, () => ({
         show() {

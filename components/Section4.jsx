@@ -1,6 +1,6 @@
 import style from './Section4.module.scss';
 
-export default props => {
+const Section = props => {
     const skills = [
         { name: 'HTML', progress: 70},
         { name: 'CSS', progress: 70},
@@ -24,4 +24,6 @@ export default props => {
             </ul>
         </div>
     </>
-}
+};
+
+export default Section;

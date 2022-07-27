@@ -1,8 +1,10 @@
 import style from './Section2.module.scss';
 
-export default props => {
+const Section = props => {
     
     return <>
         <div className={style["section2"]}>{props.children}</div>
     </>
-}
+};
+
+export default Section;

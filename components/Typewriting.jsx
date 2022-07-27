@@ -1,11 +1,12 @@
 import style from './Typewriting.module.scss';
 import {useState, useRef, useEffect} from 'react';
 
-export default props => {
+let timer;
+const Typewriting = props => {
     const [content, setContent] = useState('');
-    let timer;
 
     useEffect(() => {
+        clearInterval(timer);
         const len = props.text.length;
         const cur = 1;
         timer = setInterval(() => {
@@ -22,3 +23,5 @@ export default props => {
         <span className={style['content']}>{content}</span>
     </>
 }
+
+export default Typewriting;

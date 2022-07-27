@@ -1,6 +1,6 @@
 import style from './Career.module.scss';
 import { useRouter } from 'next/router';
-export default ({career}) => {
+const Career = ({career}) => {
   const styleObj = {
     backgroundImage: `url(${career.pic})`,
     backgroundColor: career.backgroundColor,
@@ -29,4 +29,6 @@ export default ({career}) => {
       )}
     </ul>
   </div>
-}
+};
+
+export default Career;

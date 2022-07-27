@@ -1,7 +1,7 @@
 import style from './Nav.module.scss';
 import {useEffect} from 'react';
 
-export default function Nav() {
+const Nav = () => {
     const doms = [];
     useEffect(() => {
         const menu1 = document.getElementById('section3');
@@ -9,7 +9,7 @@ export default function Nav() {
         const menu3 = document.getElementById('section5');
         const menu4 = document.getElementById('section6');
         doms.push(menu1, menu2, menu3, menu4);
-    }, []);
+    }, [doms]);
 
     const intoView = val => {
         doms[val].scrollIntoView({behavior: 'smooth'});
@@ -23,4 +23,6 @@ export default function Nav() {
             <li onClick={intoView.bind(null, 3)}>联系方式</li>
         </ul>
     )
-}
+};
+
+export default Nav;

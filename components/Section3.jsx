@@ -1,6 +1,6 @@
 import style from './Section3.module.scss';
 
-export default props => {
+const Section = props => {
     
     return <>
         <div className={style["section3"]} id="section3">
@@ -16,3 +16,5 @@ export default props => {
         </div>
     </>
 }
+
+export default Section;

@@ -1,5 +1,7 @@
 import style from './Wall.module.scss';
 
-export default () => <>
+const Wall = () => <>
     <div className={style['wall']}></div>
 </>
+
+export default Wall;

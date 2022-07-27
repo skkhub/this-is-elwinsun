@@ -1,6 +1,6 @@
 import style from './3Ddemo.module.scss';
 
-export default props => <>
+const demo = () => <>
     <div className={style['container']}>
         <div className={style['container2']}></div>
         
@@ -21,4 +21,6 @@ export default props => <>
         <div className={style['origin']}></div>
         
     </div>
-</>
+</>;
+
+export default demo;
