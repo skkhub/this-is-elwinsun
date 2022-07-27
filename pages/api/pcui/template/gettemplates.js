@@ -1,6 +1,6 @@
 
 export default function handler(req, res) {
-    console.log('req=', req.body);
+    // console.log('req=', req.body);
     let response = {
         errno: 0,
         errmsg: '自定义参数错误'
