@@ -17,13 +17,13 @@ export default function handler(req, res) {
     }
     else if (param.type === 'element') {
         if (param.element === 'font') {
-            response = require('./font3');
+            response = require('./font');
         }
         else if (param.element === 'stroke') {
-            response = require('./stroke2');
+            response = require('./stroke');
         }
         else if (param.element === 'paster') {
-            response = require('./paster2');
+            response = require('./paster');
         }
     }
     
