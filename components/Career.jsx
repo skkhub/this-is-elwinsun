@@ -1,5 +1,7 @@
-import style from './Career.module.scss';
+import styles from './Career.module.scss';
 import { useRouter } from 'next/router';
+// import Image from 'next/image';
+
 const Career = ({career}) => {
   const styleObj = {
     backgroundImage: `url(${career.pic})`,
@@ -12,17 +14,18 @@ const Career = ({career}) => {
       router.push(link);
     }
   }
-  return <div className={style['career']}>
-    <div className={style['pic']} style={styleObj} />
-    <div className={style['intro']}>{career.intro}</div>
-    <ul className={style['projects']}>
+
+  return <div className={styles['career']}>
+    <div className={styles['pic']} style={styleObj}></div>
+    <div className={styles['intro']}>{career.intro}</div>
+    <ul className={styles['projects']}>
       {career.projects.map(project =>
         <li key={project.name}
           style={{cursor: project.link ? 'pointer' : ''}}
           onClick={jumpToProject.bind(null, project.link)}>
-          <div className={style['paper']}>
-            <h4>{project.name}</h4>
-            <img src={project.pic} alt="" />
+          <div className={styles['paper']}>
+            <h4 style={project.link ? {textDecoration: 'underline'} : null}>{project.name}</h4>
+            {project.picList?.length > 0 && project.picList.map(pic => <img key={pic} src={pic} alt="" />)}
             <p>{project.desc}</p>
           </div>
         </li>

@@ -1,4 +1,4 @@
-import style from './Section4.module.scss';
+import styles from './Section4.module.scss';
 
 const Section = props => {
     const skills = [
@@ -12,7 +12,7 @@ const Section = props => {
         { name: 'mini-app', progress: 45},
     ]
     return <>
-        <div className={style["section4"]} id="section4">
+        <div className={styles["section4"]} id="section4">
             <h3>我的技能</h3>
             <ul>
                 {skills.map(skill =>

@@ -1,7 +1,7 @@
-import style from './Wall.module.scss';
+import styles from './Wall.module.scss';
 
 const Wall = () => <>
-    <div className={style['wall']}></div>
+    <div className={styles['wall']}></div>
 </>
 
 export default Wall;

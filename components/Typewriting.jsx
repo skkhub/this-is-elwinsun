@@ -1,5 +1,5 @@
-import style from './Typewriting.module.scss';
-import {useState, useRef, useEffect} from 'react';
+import styles from './Typewriting.module.scss';
+import {useState, useEffect} from 'react';
 
 let timer;
 const Typewriting = props => {
@@ -20,7 +20,7 @@ const Typewriting = props => {
         }, 200);
     }, [props.text]);
     return <>
-        <span className={style['content']}>{content}</span>
+        <span className={styles['content']}>{content}</span>
     </>
 }
 

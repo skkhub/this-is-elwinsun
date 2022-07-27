@@ -24,7 +24,7 @@ export default function Index() {
         <Nav />
         <main className="main">
             <Section2>
-                <Window className="window" img="/img2.webp" onClick={showBanner}></Window>
+                <Window className="window" img="/images/img2.webp" onClick={showBanner}></Window>
             </Section2>
             <Section3></Section3>
             <Section4></Section4>

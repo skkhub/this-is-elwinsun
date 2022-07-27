@@ -1,8 +1,8 @@
-import style from './Window.module.scss';
+import styles from './Window.module.scss';
 
 const Window = props => <>
-    <div className={style["window"] + ' ' + props.className}>
-        <div className={style['inner']}
+    <div className={styles["window"] + ' ' + props.className}>
+        <div className={styles['inner']}
             style={{backgroundImage: `url(${props.img})`}}
             onClick={props.onClick}
             >

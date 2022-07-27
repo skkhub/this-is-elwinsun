@@ -1,10 +1,10 @@
-import style from './Banner.module.scss';
+import styles from './Banner.module.scss';
 import {useState, useEffect, useRef, useImperativeHandle, forwardRef} from 'react';
 
+let running = false;
 let Banner = (props, ref) => {
     const banner = useRef(null);
     const [anima, setAnima] = useState(null);
-    let running = false;
     useEffect(() => {
         setAnima({
             position: 'fixed',
@@ -20,7 +20,7 @@ let Banner = (props, ref) => {
                 hide();
             }
         });
-    }, [hide]);
+    }, []);
 
     useImperativeHandle(ref, () => ({
         show() {
@@ -72,7 +72,7 @@ let Banner = (props, ref) => {
         return scrollTop;
     }
     return <>
-        <div className={style["banner"] + ' ' + props.className} style={anima} onClick={hide} ref={banner}>{props.children}</div>
+        <div className={styles["banner"] + ' ' + props.className} style={anima} onClick={hide} ref={banner}>{props.children}</div>
     </>
 }
 

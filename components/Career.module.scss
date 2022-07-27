@@ -54,19 +54,15 @@
 }
 
 .projects {
-  padding: 40px 0;
+  padding: 0 0 80px;
   overflow: hidden;
-  // border: 1px solid red;
   li {
+    // border: 1px solid red;
     position: relative;
     display: inline-block;
-    padding-left: 14vw;
+    margin-left: 14vw;
     margin-bottom: 20px;
-    // border: 1px solid blue;
-    // border-top: 1px solid #ccc;
-    // min-height: 180px;
-    // width: 400px;
-    // overflow: hidden;
+
     &:before {
       content: '';
       position: absolute;
@@ -80,15 +76,7 @@
     .paper {
       position: relative;
       z-index: 1;
-      // float: left;
-      // margin-top: -20px;
-      // margin-right: -2em;
-      // margin-bottom: 40px;
       padding: 1.5em 2em;
-      // width: 300px;
-      // min-height: 160px;
-      // max-height: 320px;
-      // display: inline-block;
       background: rgb(196, 230, 255);
       background:
         linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.2) 0) no-repeat 100% 0 / 2em 2em,
@@ -103,13 +91,13 @@
       }
 
       img {
+        display: inline-block;
         max-width: 400px;
         max-height: 300px;
-        margin: 0 auto;
+        margin: 0 4px;
         background-size: contain;
         background-repeat: no-repeat;
         // border: 1px solid red;
-        // transform: scale(0.5);
       }
       p {
         color: #444;
