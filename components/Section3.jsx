@@ -7,7 +7,7 @@ const Section = props => {
             <div className={styles["line"]}></div>
             <div className={styles["avatar"]}><img src="/images/avatar.jpg" /></div>
             <h3 className={styles['name']}>Elwin Sun</h3>
-            <section className={styles['section'] + ' ' + 'jinghong'}>
+            <section className={styles['section'] + ' ' + styles['fangsong']}>
                 <p>不跳出温水，就在温水中熟透。</p>
                 <p>所有荒废的年华，终将受到惩罚；一切付出的努力，定会收获回报。</p>
                 <p>世界是共有的，是受人支配的，别人希望你怎样不重要，问问自己希望怎样。</p>
