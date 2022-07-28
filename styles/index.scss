@@ -11,3 +11,12 @@ body {
     // overflow: hidden;
 }
 @import './home.scss';
+
+@font-face {
+    font-family: 'jinghong';
+    src: url('/font/f4065161cafcf74486075c93559a58be3ce53c95.ttf');
+}
+
+.jinghong {
+    font-family: 'jinghong';
+}
