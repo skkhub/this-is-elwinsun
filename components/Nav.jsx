@@ -1,5 +1,5 @@
 import styles from './Nav.module.scss';
-import {useEffect} from 'react';
+import {useEffect, memo} from 'react';
 
 const doms = [];
 const Nav = () => {
@@ -25,4 +25,11 @@ const Nav = () => {
     )
 };
 
-export default Nav;
+const areEqual = (prevProps, nextProps) => {
+    /*
+    return true 时不会重新渲染
+    参数只表示外界传入的props，自身组件的state更新依旧会触发render
+    */
+    return false;
+}
+export default memo(Nav, areEqual);
