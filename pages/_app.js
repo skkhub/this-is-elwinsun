@@ -1,5 +1,6 @@
 import '../styles/index.scss';
 import Script from 'next/script';
+import Head from 'next/head';
 
 /*
 import * as Sentry from '@sentry/react';
@@ -19,17 +20,21 @@ Sentry.init({
 
 export default function MyApp({ Component, pageProps }) {
     return ( <>
-        <Script id="baidutj">
+        <Head>
+            <title>Elwin Sun&apos;s Personal Website</title>
+        </Head>
+        {/* <Script id="baidutj">
             {`
             var _hmt = _hmt || [];
             (function() {
               var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?1decd983817bfbceb332ac98886304d2";
+              hm.src = "https://hm.baidu.com/hm.js?f0366c8fdf43c80584172bdebc63f554";
               var s = document.getElementsByTagName("script")[0]; 
               s.parentNode.insertBefore(hm, s);
             })();
             `}
-        </Script>
+        </Script> */}
+        <Script strategy='worker' src='https://hm.baidu.com/hm.js?f0366c8fdf43c80584172bdebc63f554'/>
         <Component {...pageProps} />
     </>
   )
