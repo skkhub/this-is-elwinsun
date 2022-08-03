@@ -1,11 +1,11 @@
 import styles from './Banner.module.scss';
-import {useState, useLayoutEffect, useRef, useImperativeHandle, forwardRef} from 'react';
+import {useState, useEffect, useRef, useImperativeHandle, forwardRef} from 'react';
 
 let running = false;
 let Banner = (props, ref) => {
     const banner = useRef(null);
     const [anima, setAnima] = useState(null);
-    useLayoutEffect(() => {
+    useEffect(() => {
         setAnima({
             position: 'fixed',
         });

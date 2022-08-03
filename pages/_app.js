@@ -1,40 +1,34 @@
-import '../styles/index.scss';
-import Script from 'next/script';
+
 import Head from 'next/head';
+import '../styles/index.scss';
 
-/*
-import * as Sentry from '@sentry/react';
-import { BrowserTracing } from "@sentry/tracing";
-
-Sentry.init({
-    dsn: "https://38a5d560a1844b92b5a6baafdb624dde@o1341041.ingest.sentry.io/6614148", // react 触发不存在的onClick会报错
-    // dsn: "https://0fd71f7ac70b45a5a10fc72914e8a8e5@o1341041.ingest.sentry.io/6614149", // js 执行不存在的func会报错
-    integrations: [new BrowserTracing()],
-  
-    // Set tracesSampleRate to 1.0 to capture 100%
-    // of transactions for performance monitoring.
-    // We recommend adjusting this value in production
-    tracesSampleRate: 1.0,
-});
-*/
+if (process.browser) {
+    import('aegis-web-sdk').then(res => {
+        const Aegis = res.default;
+        // only report prod
+        new Aegis({
+            id: 'vqgYyi4qlPx29LD5dp', // 上报 id
+            uin: 'xxx', // 用户唯一 ID（可选）
+            reportApiSpeed: true, // 接口测速
+            reportAssetSpeed: true, // 静态资源测速
+            spa: true, // spa 应用页面跳转的时候开启 pv 计算
+        });
+        // all env report
+        new Aegis({
+            id: 'Jjm8eslJWoGP3Q9DXW', // 上报 id
+            uin: 'xxx', // 用户唯一 ID（可选）
+            reportApiSpeed: true, // 接口测速
+            reportAssetSpeed: true, // 静态资源测速
+            spa: true, // spa 应用页面跳转的时候开启 pv 计算
+        });
+    })
+}
 
 export default function MyApp({ Component, pageProps }) {
     return ( <>
         <Head>
             <title>Elwin Sun&apos;s Personal Website</title>
         </Head>
-        {/* <Script id="baidutj">
-            {`
-            var _hmt = _hmt || [];
-            (function() {
-              var hm = document.createElement("script");
-              hm.src = "https://hm.baidu.com/hm.js?f0366c8fdf43c80584172bdebc63f554";
-              var s = document.getElementsByTagName("script")[0]; 
-              s.parentNode.insertBefore(hm, s);
-            })();
-            `}
-        </Script> */}
-        <Script strategy='worker' src='https://hm.baidu.com/hm.js?f0366c8fdf43c80584172bdebc63f554'/>
         <Component {...pageProps} />
     </>
   )
