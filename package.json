@@ -8,7 +8,8 @@
     "start": "npx next start -p 8080",
     "lint": "npx next lint",
     "pre": "npx next build && npx next start -p 8080",
-    "deploy": "DEPLOY=true npx next build && DEPLOY=true npx next start -p 4000"
+    "build2": "DEPLOY=true npx next build",
+    "start2": "DEPLOY=true npx next start -p 4000"
   },
   "dependencies": {
     "aegis-web-sdk": "^1.36.1",
